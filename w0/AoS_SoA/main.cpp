@@ -8,7 +8,7 @@ struct X
 {
     float x[3];
     float v[3];
-    float kolor[4];
+    float kolor[4]; // nieużywane, ale celowo zajmuje miejsce
 };
 
 
@@ -51,14 +51,10 @@ std::chrono::duration<double> SoA(int N)
 
 int main()
 {
-    const int N = 10000000;
+    const int N = 20000000;
 
     std::cout << "Testing N = " << N << " (" << sizeof(X)*N/1e6 << " MB)\n";
-#ifdef NDEBUG
-    std::cout << "NDEBUG defined (Release mode?)\n";
-#else
-    std::cout << "NDEBUG not defined (Debug mode?)\n\n";
-#endif
+
     std::chrono::duration<double> t_aos = AoS(N);
     std::cout << "finished computation #1 (Array of Strustures) after "
               << t_aos.count() << " s\n";

@@ -1,0 +1,24 @@
+Projekt "silnia" to prosty program z funkcj¹ rekurencyjn¹. 
+
+Proszê na jego przyk³adzie zapoznaæ siê ze sposobem u¿ywania debugera w QtCreatorze.
+
+- Jak kompilowaæ program do uruchomienia pod kontrol¹ debugera
+- Jak uruchomiæ program w debugerze
+- Jak ustawiaæ pu³apki w programie
+- Jak œledziæ wartoœci zmiennych programu
+- Jak œledziæ wartoœci wyra¿eñ utworzonych ze zmeinnych programu
+- Do czego mo¿e siê przydaæ inspekcja stosu funkcji
+- Jak poruszaæ siê w zatrzymanym programie po stosie funkcji
+- Jakie operacje oferuje menu kontekstowe pu³apki
+-- Jak zdefiouwaæ pu³apkê, która ukatywni siê w danym miejscu tylko w wypadku spe³ninia jakiegoœ warunku, np n == 65000?
+- Czym ró¿ni siê "step into" od "step over" w kontekœcie pu³apek
+- Jakie opcje oferuje program w menu kontekstowym uaktywnianym nad identyfikatorem w programie
+
+Uruchom program. Czy domyœlasz siê, dlaczego tylko 12 pierwszych wartoœci n! jest poprawnych? 
+Dlaczego niektóre z nich s¹ ujemne?
+
+Zakomentuj pêtlê for; odkomentuj instrukcjê 
+std::cout << silnia(70000) << "\n";
+Na moim komputerze (Windows 7) program pada z sygna³em "segmentation fault". [trudne:] Czy domyœlasz siê, dlaczego?
+(Jeœli na Twoim komputrerze program nie pada, spróbuj zwiêkszyæ argument silni, a¿ program padnie.) 
+  
