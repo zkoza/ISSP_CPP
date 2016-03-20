@@ -21,10 +21,11 @@ public:
     virtual ~Figura() { qDebug() << "deleting a Figure"; }
 
 protected:
-    double xc;
-    double yc;
-    double scale;
+    double xc;    // skladowa x srodka figury
+    double yc;    // skladowa y srodka figury
+    double scale; // parametr determinujacy wielkosc figury
 };
+
 
 
 class Kolo : public Figura
@@ -49,7 +50,7 @@ public:
     void draw(QPainter & painter);
 
 private:
-    char litera;
+    char litera; // litera wyswietlana prawym KM
 };
 
 

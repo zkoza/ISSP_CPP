@@ -15,7 +15,7 @@ void Litera::draw(QPainter & painter)
     double scale = this->scale;
 
     QFont font = painter.font();
-    font.setPixelSize(scale);
+    font.setPixelSize(2*scale);
     painter.setFont(font);
 
     double x = this->xc - scale;
