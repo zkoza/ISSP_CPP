@@ -1,3 +1,5 @@
+#pragma once
+
 #include <cstdlib>     // <-- żeby kompilator rozpoznawał typ size_t
 
 class Wektor
@@ -31,6 +33,4 @@ Wektor   operator+  (Wektor lhs,   Wektor const& rhs);
 
 void add3(Wektor & target, Wektor const& v1, Wektor const& v2, Wektor const& v3);
 
-#if __cplusplus >= 201103L
-Wektor   operator+ (Wektor const& lhs, Wektor && rhs);
-#endif
+

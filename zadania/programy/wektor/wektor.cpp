@@ -107,14 +107,6 @@ Wektor::Wektor(Wektor && w)
 }
 
 
-Wektor operator+(Wektor const& lhs, Wektor && rhs)
-{
-    if (lhs.size() != rhs.size())
-        throw std::string(__FUNCTION__) + ": sizes don't match";
-
-    rhs += lhs;
-    return rhs;
-}
 #endif
 
 
