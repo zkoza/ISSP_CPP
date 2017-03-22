@@ -1,7 +1,0 @@
-<RCC>
-    <qresource prefix="/img">
-        <file>img/ButtonForward.png</file>
-        <file>img/ButtonLeft.png</file>
-        <file>img/ButtonReload.png</file>
-    </qresource>
-</RCC>
